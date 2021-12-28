@@ -1,3 +1,8 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route()
 def addition ():
     print("Addition")
     n = float(input("Enter the number: "))
@@ -66,3 +71,6 @@ while True:
             print ("Sorry, invilid character")
     else:
         break
+
+if __name__ == '__main__':
+    app.run()
